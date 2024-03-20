@@ -1747,6 +1747,21 @@ iframe.instagram-media + script + :not([id]) {
     line-height: 1.2em;
 }
 
+.article-byline-author-group {
+    display: flex;
+    gap: 8px;
+}
+
+.article-byline-author {
+    display: flex;
+    gap: 4px;
+}
+
+.article-byline-author:not(:last-child)::after {
+    content:',';
+    margin-left: -4px;
+}
+
 .article-byline-meta .author-name {
     margin: 0 0 6px;
     font-size: 1.7rem;
